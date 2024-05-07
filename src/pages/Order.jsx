@@ -51,6 +51,12 @@ const Order = () => {
           numberofproducts: numberOfProduct,
           contractdays: data.maxContractPeriod,
         }
+        // const res = await axios.post(
+        //   "http://localhost:5000/deploy-package-tracker",
+        //   {
+        //     contractAddress: walletAddress,
+        //     productName: numberOfProduct,
+        //   }
       );
       console.log(res.data);
       setBlockAddress(res.data.address);
