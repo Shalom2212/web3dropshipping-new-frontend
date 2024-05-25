@@ -35,6 +35,9 @@ const Home = () => {
       title: "Price for each product",
       dataIndex: "productPrice",
       key: "productPrice",
+      render: (_, record) => (
+        <div>{parseInt(record.productPrice) / 1000000000000000000} ETH</div>
+      ),
     },
     {
       title: "Supplier Name",
